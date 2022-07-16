@@ -13,6 +13,9 @@
   "engines": {
     "node": "16.x"
   },
+  "routes": [
+    { "src": "/(.*)", "dest": "index.js" }
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MatiasTK/WordleES-API.git"
