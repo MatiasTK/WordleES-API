@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "start": "npx tsc && node build",
+    "start": "node build/index.js",
     "dev": "npx nodemon src/index.ts",
     "build": "tsc",
     "eslint": "eslint src/*",
