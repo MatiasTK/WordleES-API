@@ -10,7 +10,7 @@ Every day it returns a new word
 Demo
 ----------
 
-[Vercel App](wordle-ashy.vercel.app)
+[Heroku App](https://matiastk-wordle-api.herokuapp.com/)
 
 Usage - Routes
 ----------
@@ -25,6 +25,6 @@ TO-DO
 ----------
 
 - [ ] Avoid repeating words.
-- [ ] Transform project into typescript.
+- [x] Transform project into typescript.
 - [ ] Store word to use less DB data.
 - [ ] Crypt word?
