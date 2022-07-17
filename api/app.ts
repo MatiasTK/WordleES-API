@@ -12,6 +12,10 @@ export default function startExpress() {
   app.use(express.json());
   app.use(Routes);
 
+  app.get('/', (req, res) => {
+    res.send('Test');
+  });
+
   app.get('*', (req, res) => {
     res.status(200).json({
       Routes: [
