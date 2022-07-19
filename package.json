@@ -5,20 +5,14 @@
   "main": "index.ts",
   "scripts": {
     "start": "node build/index.js",
-    "dev": "npx nodemon src/index.ts",
+    "dev": "npx nodemon api/index.ts",
     "build": "tsc",
-    "eslint": "eslint src/*",
+    "eslint": "eslint api/*",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
     "node": "16.x"
   },
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "index.js"
-    }
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MatiasTK/WordleES-API.git"

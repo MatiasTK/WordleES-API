@@ -21,7 +21,7 @@ export const checkWord = async (req: Request, res: Response) => {
 };
 
 export const getNewWord = async (req: Request, res: Response) => {
-  const word = setRandomWord();
+  const word = await setRandomWord();
   res.json({ status: `Daily word set to ${word}` });
 };
 

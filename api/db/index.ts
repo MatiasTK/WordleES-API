@@ -5,7 +5,7 @@ import { join } from 'path';
 
 dotenv.config();
 
-const wordsFile = join(process.cwd(), './src/json/palabras_5.json');
+const wordsFile = join(process.cwd(), './api/json/palabras_5.json');
 const client = new Redis(process.env.REDIS_URL!);
 client.on('error', (e) => {
   console.error(e);
@@ -18,7 +18,7 @@ export const getWord = async (): Promise<String> => {
 };
 
 export const setWord = async (word: string) => {
-  await client.set('dailyword', word);
+  await client.set('dailyWord', word);
 };
 
 export const setRandomWord = async (): Promise<string> => {
